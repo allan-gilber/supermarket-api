@@ -5,8 +5,8 @@ export default class OrdersTableData extends DataBase {
     return await this.connection().schema.createTable('orders', (table: any) => {
       table.string('order_id').primary();
       table.string('order_client_name').notNullable();
+      table.decimal('order_total', 8, 2);
       table.datetime('order_shipping_date').notNullable();
-      table.string('order_product_list_id', 8, 2).notNullable().unique();
     }).then(() => console.log('Table "orders" successful created!'));
   }
 
