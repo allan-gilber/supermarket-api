@@ -1,3 +1,3 @@
-# template-node-js-repo
+# Supermarket API
 
-Template for creating new APIs using node.js, express and knex.
+Under construction...
