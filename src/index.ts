@@ -1,5 +1,6 @@
 import {Request, Response} from 'express';
+import {ProductsController} from './application/ProductsController';
 import app from './business/applicationBusiness/ApplicationLogic';
 
 
-app.get('/', (req: Request,res: Response) => res.status(200).send({message: 'hello world!'}));
+app.put('/products/insert-new', (req: Request, res: Response) => new ProductsController().insertNewProduct(req, res));
