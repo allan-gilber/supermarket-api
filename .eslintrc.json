@@ -111,6 +111,13 @@
         "arrow-parens": [
             "error",
             "as-needed"
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": "false",
+                "after": "true"
+            }
         ]
     }
 }
